@@ -1,0 +1,193 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+   }
+/* body */
+body {
+    background-color: rgb(255, 255, 255);
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    }
+    
+/* header */
+/* logo */
+.logo {
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 26px;
+
+     color: var(--title-text-color);
+   }
+.logo_color {
+     color: var(--accent-color);
+}
+/* навигация сайта */
+.site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+}
+.list .link:hover,
+.list .link:focus
+ {
+    color: var(--accent-color);
+}
+.contacts .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        color: var(--primary-text-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+/* main 1*/
+
+/* section hero */
+.hero {
+    background-color: #2F303A;
+}
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+}
+.hero .order-service{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+.hero .order-service:hover {
+    cursor: pointer;
+
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+ /* section наші якості */
+
+.list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-text-color)
+}
+.list .text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* section чим ми займаэмось */
+.work .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+/* section наша команда */
+.our-team .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color)
+}
+.specialist-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: var(--title-text-color);
+    }
+.proffession {
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+}
+
+
+
+/* main 2 Портфоліо */
+
+.list .navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: var(--title-text-color) ;
+}
+.list .navigation:hover,
+.list .navigation:focus {
+cursor: pointer;
+background-color: var(--accent-color) ;
+color: white ;
+
+}
+
+.list .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+
+.list .project-description {
+    font-size: 16px;
+    line-height: 2;
+
+    color: var(--primary-text-color);
+}
+
+/* footer */
+footer {
+    background-color: #2F303A;
+}
+.logo-footer {
+    font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.2;
+
+     color:#FFFFFF;
+}
+.list .link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
+}
