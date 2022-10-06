@@ -3,24 +3,54 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
    }
-/* body */
+/* body===================================== */
 body {
-    background-color: rgb(255, 255, 255);
+    width: 1600px;
+    background-color: #F5F4FA;
     color: var(--primary-text-color);
     font-family: 'Roboto';
     letter-spacing: 0.03em;
 }
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 a {
     text-decoration: none;
     }
     
-/* header */
-/* logo */
+/* body===================================== */
+/* header=========================== */
+/* logo========================= */
+.page-header{
+border: 1px solid #EEEEEE;
+}
+.box{
+    display: flex;
+    align-items: center;
+    
+}
 .logo {
+      margin-right: 93px;
      font-family: 'Raleway';
      font-style: normal;
      font-weight: 700;
@@ -31,8 +61,23 @@ a {
 .logo_color {
      color: var(--accent-color);
 }
-/* навигация сайта */
+/* header=========================== */
+/* logo========================= */
+/* навигация сайта============= */
+.site-nav{
+    display: flex;
+    margin-right: auto;
+}
+.site-nav .item {
+       margin-right: 50px;
+}
+.site-nav .item:last-child {
+    margin-right: 0;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -45,7 +90,20 @@ a {
  {
     color: var(--accent-color);
 }
+/* навігація сайта============= */
+/* контакти ===============*/
+.contacts {
+    display: flex;
+}
+.contacts .item{
+        margin-right: 50px;
+}
+.contacts .item:last-child{
+    margin-right: 0;
+}
 .contacts .link {
+        display: block;
+        
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -56,13 +114,24 @@ a {
 .site-nav .link.current {
     color: var(--accent-color);
 }
-/* main 1*/
+/* контакти */
+/* header=========================== */
+/* main 1=============================*/
 
-/* section hero */
+/* section hero =====================*/
+
 .hero {
     background-color: #2F303A;
-}
+    text-align: center;
+    padding-top: 94px
+   }
 h1 {
+    
+    padding-left: 452px;
+    padding-right: 452px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -72,27 +141,47 @@ h1 {
   
     color: #FFFFFF;
 }
-.hero .order-service{
+/* кнопка замовити послугу =========== */
+.hero .order{
+    display: inline-block;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 0;
+    
+    min-width: 216px;
+    min-height: 50px;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 
+    background-color: white;
     color: var(--title-text-color);
 }
-.hero .order-service:hover {
+.hero .order:hover {
     cursor: pointer;
 
     background-color: var(--accent-color);
     color: #FFFFFF;
 }
+/* кнопка замовити послугу =========== */
+/* section hero =====================*/
+ /* section наші якості =======================*/
 
- /* section наші якості */
-
+.features .list {
+    display: flex;
+    justify-content: space-between;
+}
 .list .title {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -101,11 +190,22 @@ h1 {
     color: var(--title-text-color)
 }
 .list .text {
+    margin-top: 10px;
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.7;
 }
-/* section чим ми займаэмось */
-.work .title{
+ /* section наші якості =======================*/
+/* section чим ми займаємось =========================*/
+.work .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .title{ 
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -113,16 +213,34 @@ h1 {
 
     color: var(--title-text-color);
 }
-/* section наша команда */
+/* section чим ми займаємось =========================*/
+/* section наша команда============================== */
+
 .our-team .title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 
-    color: var(--title-text-color)
+       color: var(--title-text-color)
+}
+.our-team .list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.our-team .item{
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .specialist-name {
+    margin-top: 30px;
+    margin-bottom: 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -131,31 +249,90 @@ h1 {
     color: var(--title-text-color);
     }
 .proffession {
+margin-top: 10px;
+margin-bottom: 0;
+
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 }
+/* section наша команда============================== */
+/* main 1=============================*/
 
+/* main 2 Портфоліо====================================================================== */
 
+/* кнопки навигації============================= */
 
-/* main 2 Портфоліо */
+.button-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
-.list .navigation {
+ .list .button{
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 8px;
+
+    border-radius: 4px;
+    border-style: none;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
 
     color: var(--title-text-color) ;
+    background-color: transparent;
+} 
+.project-list .link {
+    display: block
 }
-.list .navigation:hover,
-.list .navigation:focus {
+.list .button:last-child {
+    margin-left: 0;
+}
+.list .button:hover,
+.list .button:focus {
 cursor: pointer;
 background-color: var(--accent-color) ;
 color: white ;
+}
+
+/* кнопки навигації============================= */
+/* галерея проєктів============================== */
+.projects .link {
+    /* display: block; */
+    
+width: 370px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-left:calc(- 1 * 30px) ;
+    margin-top: calc(- 1 * 30px);
 
 }
 
+.projects > .item {
+    margin-top: 30px; 
+    margin-left: 30px;
+    margin-bottom: 0;
+    flex-basis: calc(100% / 3 - 30px);
+    
+    border-bottom: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    
+}
+.projects > .item:nth-child(3n + 1) {
+margin-left: 0;
+}
+
 .list .project-title {
+    margin-top:20px ;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -165,18 +342,25 @@ color: white ;
 }
 
 .list .project-description {
+    margin-top:4px ;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 2;
 
     color: var(--primary-text-color);
 }
-
-/* footer */
+/* галерея проєктів============================== */
+/* main 2 Портфоліо===================================================================== */
+/* footer=============================== */
 footer {
     background-color: #2F303A;
 }
 .logo-footer {
-    font-family: 'Raleway';
+     display: inline-block;
+     margin-top: 60px;
+     margin-bottom: 0;
+
+     font-family: 'Raleway';
      font-style: normal;
      font-weight: 700;
      font-size: 26px;
@@ -184,10 +368,30 @@ footer {
 
      color:#FFFFFF;
 }
-.list .link {
+
+.address {
+    margin-top: 20;
+    margin-bottom: 0;
+}
+address {
+    padding-bottom: 60px;
+}
+.contacts-footer .list{
+    display: inline-block
+
+}
+.contacts-footer .link {
+    display: inline-block;
+    margin-top: 9px;
+    margin-bottom: 0;
+
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color)
 }
+
+/* footer=============================== */
