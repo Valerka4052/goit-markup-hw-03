@@ -126,8 +126,6 @@ border: 1px solid #EEEEEE;
     padding-bottom: 172px;
    }
 .hero .title {
-    
-    /* padding-top: 200px; */
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -144,6 +142,7 @@ border: 1px solid #EEEEEE;
 .hero .order{
     display: inline-block;
     border-radius: 4px;
+    border-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
@@ -208,6 +207,9 @@ border: 1px solid #EEEEEE;
 }
  /* section наші якості =======================*/
 /* section чим ми займаємось =========================*/
+.work {
+    padding-top: 0;
+}
 .work .list {
     display: flex;
     justify-content: space-between;
@@ -236,7 +238,7 @@ border: 1px solid #EEEEEE;
     line-height: 1.17;
     text-align: center;
 
-       color: var(--title-text-color)
+    color: var(--title-text-color)
 }
 .our-team .list {
     display: flex;
@@ -262,12 +264,12 @@ border: 1px solid #EEEEEE;
     color: var(--title-text-color);
     }
 .proffession {
-margin-top: 10px;
-margin-bottom: 0;
-
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    
+    line-height: 1.19;
+    font-size: 16px;
+    text-align: center;
 }
 /* section наша команда============================== */
 /* main 1=============================*/
@@ -325,24 +327,30 @@ color: white ;
     
     margin: -15px;
 }
-
+img{
+    display: block;
+}
 .projects > .item {
     width: 370px;
-    padding-bottom: 20px;
-    margin: 15px;
-    /* margin-bottom: 0; */
-    flex-basis: calc((100% - 30px * 3) / 3);
     
-    border-bottom: 1px solid #EEEEEE;
-        
+    margin: 15px;
+    flex-basis: calc((100% - 30px * 3) / 3);
 }
-.projects > .item:nth-child(3n + 1) {
-/* margin-left: 0; */
+
+.description {
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+
+    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .list .project-title {
-    margin-top:20px ;
     margin-bottom: 0;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -388,10 +396,7 @@ footer {
 address {
     padding-bottom: 60px;
 }
-.contacts-footer .list{
-    display: inline-block
 
-}
 .contacts-footer .link {
     display: inline-block;
     margin-top: 9px;
