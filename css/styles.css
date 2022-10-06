@@ -5,8 +5,8 @@
    }
 /* body===================================== */
 body {
-    width: 1600px;
-    background-color: #F5F4FA;
+    /* width: 1600px; */
+    background-color: white;
     color: var(--primary-text-color);
     font-family: 'Roboto';
     letter-spacing: 0.03em;
@@ -119,16 +119,15 @@ border: 1px solid #EEEEEE;
 /* main 1=============================*/
 
 /* section hero =====================*/
-
 .hero {
     background-color: #2F303A;
     text-align: center;
-    padding-top: 94px
+    padding-top: 200px;
+    padding-bottom: 172px;
    }
-h1 {
+.hero .title {
     
-    padding-left: 452px;
-    padding-right: 452px;
+    /* padding-top: 200px; */
     margin-top: 0;
     margin-bottom: 30px;
 
@@ -177,10 +176,18 @@ h1 {
 .features .list {
     display: flex;
     justify-content: space-between;
+} 
+.features .item{
+    margin-right: 30px;
+    width: 270px;
+}
+.features .item:last-child{
+    margin-right:0;
 }
 .list .title {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 30px;
 
     font-weight: 700;
     font-size: 14px;
@@ -188,6 +195,9 @@ h1 {
     text-transform: uppercase;
 
     color: var(--title-text-color)
+}
+.list .title:last-child{
+    margin-right: 0;
 }
 .list .text {
     margin-top: 10px;
@@ -215,7 +225,9 @@ h1 {
 }
 /* section чим ми займаємось =========================*/
 /* section наша команда============================== */
-
+.our-team {
+    background-color: #F5F4FA;
+}
 .our-team .title {
     margin-top: 0;
     margin-bottom: 0;
@@ -233,6 +245,7 @@ h1 {
     margin-top: 50px;
 }
 .our-team .item{
+    padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -290,8 +303,10 @@ text-align: center;
 .project-list .link {
     display: block
 }
+
 .list .button:last-child {
     margin-left: 0;
+    
 }
 .list .button:hover,
 .list .button:focus {
@@ -302,32 +317,27 @@ color: white ;
 
 /* кнопки навигації============================= */
 /* галерея проєктів============================== */
-.projects .link {
-    /* display: block; */
-    
-width: 370px;
-}
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     
-    margin-left:calc(- 1 * 30px) ;
-    margin-top: calc(- 1 * 30px);
-
+    margin: -15px;
 }
 
 .projects > .item {
-    margin-top: 30px; 
-    margin-left: 30px;
-    margin-bottom: 0;
-    flex-basis: calc(100% / 3 - 30px);
+    width: 370px;
+    padding-bottom: 20px;
+    margin: 15px;
+    /* margin-bottom: 0; */
+    flex-basis: calc((100% - 30px * 3) / 3);
     
     border-bottom: 1px solid #EEEEEE;
-    background-color: #FFFFFF;
-    
+        
 }
 .projects > .item:nth-child(3n + 1) {
-margin-left: 0;
+/* margin-left: 0; */
 }
 
 .list .project-title {
@@ -372,6 +382,8 @@ footer {
 .address {
     margin-top: 20;
     margin-bottom: 0;
+    font-style: normal;
+    color: var(--primary-text-color);
 }
 address {
     padding-bottom: 60px;
